@@ -1,0 +1,83 @@
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+@media (max-width: 991px){
+	.ojito{
+		 position: absolute;
+	    left: 50%;
+	    top: 56%;
+	    transform: translate(-50%, -50%);
+	    -webkit-transform: translate(-50%, -50%);
+	}
+}
+@media (min-width: 992px){
+	/*POSICION DE LA IMAGEN QUE GIRA*/
+	.ojito{
+		 position: absolute;
+	    left: 50%;
+	    top: 50%;
+	    transform: translate(-50%, -50%);
+	    -webkit-transform: translate(-50%, -50%);
+	}
+	/*IDIOMAS*/
+	.headerLang{
+		position: absolute;
+		right: 48%;
+		top: 5%;
+	}
+	/*ESTILO DEL SEARCH*/
+	.searchStyle{
+		position: absolute;
+		right: 10%;
+		top: 50%;
+	}
+	.inputStyle {
+  	border: 2px solid black;
+	}
+	.buttonStyle {
+	  background-color: black;
+	  border: 2px solid black;
+	  color: white;
+	}
+	/*ESTILO DEL LOGO PRENSA*/
+	.menu{
+		position: absolute;
+		top: 47%;
+		right: 80%;
+	}
+}
+a {
+  text-decoration: none;
+}
+a:link {
+  color: black;
+}
+.contenedor{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+.rojo{
+	display: block;
+	margin: 0 auto;
+}
+.imgCircular{
+	animation: rotation 20s infinite linear;
+}
+
+.redes{
+	position: absolute;
+	left: 48%;
+	top: 95%;
+	transform: translate(-48%, -48%);
+    -webkit-transform: translate(-48%, -48%);
+}
+.mb-1{
+	width: 70%!important;
+}

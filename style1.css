@@ -1,0 +1,97 @@
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+@media (min-width: 992px) {
+  
+}
+.headerLang {
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: center;
+align-items: flex-start;
+align-content: center;
+}
+.headerLang > a {
+  padding: 3px;
+}
+a {
+  text-decoration: none;
+}
+a:link {
+  color: black;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding-top: 100px;
+}
+
+.upper, .lower {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.center > div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.searchStyle {
+  align-items: flex-start;
+}
+
+.inputStyle {
+  border: 2px solid black;
+}
+.buttonStyle {
+  background-color: black;
+  border: 2px solid black;
+  color: white;
+}
+.upper {
+  position: relative;
+}
+.imgCircular {
+  width: 50%;
+  position: absolute;
+  top: -100px;
+  animation: rotation 20s infinite linear;
+}
+/* .imgCircular:hover {
+  animation: rotation 20s infinite linear;
+} */
+.imgCenter {
+  width: 50%;
+  position: relative;
+  top: -100px;
+  margin: auto;
+}
+.imgCenter:hover {
+  transform: scale(2);
+}
+.socialMedia {
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: center;
+align-items: flex-end;
+align-content: stretch;
+}
+.socialMedia > a {
+  padding: 3px;
+}
