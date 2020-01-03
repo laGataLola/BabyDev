@@ -7,8 +7,8 @@
   }
 }
 @media (max-width: 991px){
-	.ojito{
-		 position: absolute;
+	.ojo{
+		position: absolute;
 	    left: 50%;
 	    top: 56%;
 	    transform: translate(-50%, -50%);
@@ -17,18 +17,22 @@
 }
 @media (min-width: 992px){
 	/*POSICION DE LA IMAGEN QUE GIRA*/
-	.ojito{
+	.ojo{
 		 position: absolute;
 	    left: 50%;
 	    top: 50%;
 	    transform: translate(-50%, -50%);
 	    -webkit-transform: translate(-50%, -50%);
 	}
+	.ojo:hover {
+		transform: scale(2) translate(-25%, -25%);
+	    -webkit-transform: scale(2) translate(-25%, -25%);
+	}
 	/*IDIOMAS*/
 	.headerLang{
 		position: absolute;
 		right: 48%;
-		top: 5%;
+		top: 3%;
 	}
 	/*ESTILO DEL SEARCH*/
 	.searchStyle{
@@ -63,7 +67,7 @@ a:link {
 	justify-content: center;
 	height: 100vh;
 }
-.rojo{
+.texto-circular{
 	display: block;
 	margin: 0 auto;
 }
@@ -73,11 +77,72 @@ a:link {
 
 .redes{
 	position: absolute;
-	left: 48%;
+	left: 50%;
 	top: 95%;
 	transform: translate(-48%, -48%);
     -webkit-transform: translate(-48%, -48%);
 }
 .mb-1{
 	width: 70%!important;
+}
+.norte {
+	position: absolute;
+	left: 50%;
+	top: 30%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+}
+.norte-contenedor {
+	position: relative;
+	width: 200px;
+	height: 100px;
+	text-align: center;
+}
+.norte-letra {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translate(-50%, 0);
+	-webkit-transform: translate(-50%, 0);
+}
+.norte-links {
+	
+}
+.norte-links-izq {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.norte-links-der {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.norte-links-abajo {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+}
+.sur {
+	position: absolute;
+	left: 50%;
+	top: 70%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+}
+.este {
+	position: absolute;
+	left: 60%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+}
+.oeste {
+	position: absolute;
+	left: 40%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
 }
