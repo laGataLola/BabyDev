@@ -17,14 +17,14 @@
 }
 @media (min-width: 992px){
 	/*POSICION DE LA IMAGEN QUE GIRA*/
-	.ojo{
+	.eye{
 		 position: absolute;
 	    left: 50%;
 	    top: 50%;
 	    transform: translate(-50%, -50%);
 	    -webkit-transform: translate(-50%, -50%);
 	}
-	.ojo:hover {
+	.eye:hover {
 		transform: scale(2) translate(-25%, -25%);
 	    -webkit-transform: scale(2) translate(-25%, -25%);
 	}
@@ -61,21 +61,21 @@ a {
 a:link {
   color: black;
 }
-.contenedor{
+.central-container{
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
 }
-.texto-circular{
+.circular-text{
 	display: block;
 	margin: 0 auto;
 }
-.imgCircular{
+.circular-img{
 	animation: rotation 20s infinite linear;
 }
 
-.redes{
+.social-media{
 	position: absolute;
 	left: 50%;
 	top: 95%;
@@ -85,66 +85,103 @@ a:link {
 .mb-1{
 	width: 70%!important;
 }
-.norte {
+.north {
 	position: absolute;
 	left: 50%;
 	top: 30%;
 	transform: translate(-50%, -50%);
 	-webkit-transform: translate(-50%, -50%);
 }
-.norte-contenedor {
-	position: relative;
-	width: 200px;
-	height: 100px;
-	text-align: center;
-}
-.norte-contenedor:hover .norte-links {
-	visibility: visible;
-}
-.norte-letra {
+	.north-container {
+		position: relative;
+		width: 200px;
+		height: 100px;
+		text-align: center;
+	}
+	.north-container:hover .north-links {
+		visibility: visible;
+	}
+	.north-letter {
+		position: absolute;
+		left: 50%;
+		top: 0;
+		transform: translate(-50%, 0);
+		-webkit-transform: translate(-50%, 0);
+	}
+	.north-links {
+		visibility: hidden; 
+	}
+	.north-links-left {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.north-links-right {
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	.north-links-down {
+		position: absolute;
+		left: 50%;
+		bottom: 0;
+		transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+	}
+
+.west {
 	position: absolute;
-	left: 50%;
-	top: 0;
-	transform: translate(-50%, 0);
-	-webkit-transform: translate(-50%, 0);
-}
-.norte-links {
-	visibility: hidden; 
-}
-.norte-links-izq {
-	position: absolute;
-	right: 0;
-	top: 0;
-}
-.norte-links-der {
-	position: absolute;
-	left: 0;
-	top: 0;
-}
-.norte-links-abajo {
-	position: absolute;
-	left: 50%;
-	bottom: 0;
+	left: 40%;
+	top: 50%;
 	transform: translate(-50%, -50%);
 	-webkit-transform: translate(-50%, -50%);
 }
-.sur {
+	.west-container {
+		position: relative;
+		width: 100px;
+		height: 200px;
+		text-align: center;
+	}
+	.west-container:hover .west-links {
+		visibility: visible;
+	}
+	.west-letter {
+		position: absolute;
+		top: 45%;
+		transform: translate(-50%, 0);
+		-webkit-transform: translate(-50%, 0);
+	}
+	.west-links {
+		visibility: hidden; 
+	}
+	.west-links-up {
+		position: absolute;
+		left: -18%;
+		top: 5%;
+	}
+	.west-links-center {
+		position: absolute;
+		left: 40%;
+		top: 45%;
+	}
+	.west-links-down {
+		position: absolute;
+		left: 5%;
+		bottom: 0;
+		transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+	}
+
+.south {
 	position: absolute;
 	left: 50%;
 	top: 70%;
 	transform: translate(-50%, -50%);
 	-webkit-transform: translate(-50%, -50%);
 }
-.este {
+.east {
 	position: absolute;
 	left: 60%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	-webkit-transform: translate(-50%, -50%);
-}
-.oeste {
-	position: absolute;
-	left: 40%;
 	top: 50%;
 	transform: translate(-50%, -50%);
 	-webkit-transform: translate(-50%, -50%);
