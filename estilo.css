@@ -31,7 +31,7 @@
 	/*IDIOMAS*/
 	.headerLang{
 		position: absolute;
-		right: 48%;
+		left: 48%;
 		top: 3%;
 	}
 	/*ESTILO DEL SEARCH*/
@@ -98,6 +98,9 @@ a:link {
 	height: 100px;
 	text-align: center;
 }
+.norte-contenedor:hover .norte-links {
+	visibility: visible;
+}
 .norte-letra {
 	position: absolute;
 	left: 50%;
@@ -106,7 +109,7 @@ a:link {
 	-webkit-transform: translate(-50%, 0);
 }
 .norte-links {
-	
+	visibility: hidden; 
 }
 .norte-links-izq {
 	position: absolute;
